@@ -1,0 +1,18 @@
+<script>
+    var currentTab = window.location.hash.substring(1);
+
+    if (currentTab === 'NOVO') {
+      document.getElementById('novo').style.display = 'block';
+    } else if (currentTab === 'LOTE') {
+      document.getElementById('lote').style.display = 'block';
+    }
+
+    function salvar() {
+      // Lógica para salvar o novo item
+    }
+
+    function salvarLote() {
+      // Lógica para salvar o novo item em lote
+    }
+  </script>
+  

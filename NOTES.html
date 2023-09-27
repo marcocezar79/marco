@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <title>NUMERAÇÃO PPB - Nova Aba</title>
+  <style>
+    /* Botões */
+    .button {
+      height: 2cm;
+      width: 3cm;
+      background-color: lightblue;
+      font-family: Arial Black, sans-serif;
+      font-size: 18px;
+      text-align: center;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .button:hover {
+      background-color: darkblue;
+      color: white;
+      transform: scale(1.1);
+    }
+
+    /* Lista de controle */
+    .control-list {
+      margin-top: 20px;
+    }
+
+    .control-list input[type="text"],
+    .control-list select {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="control-list">
+    <!-- Campos para criação de novo item -->
+    <div id="novo">
+      <input type="text" id="numero" placeholder="NÚMERO" readonly>
+      <input type="text" id="usuario" placeholder="Usuário">
+      <select id="setor">
+        <option value="DTIII">DTIII</option>
+        <option value="DCSD">DCSD</option>
+        <option value="DNSD">DNSD</option>
+        <option value="DNSD">DNFinanças</option>
+        <option value="DNSD">DCAdministrativo</option>
+        <option value="DNSD">DCtrabalho</option>
+        <option value="DNSD">DNtrabalho</option>
+        <option value="DNSD">Educação</option>
+        <option value="DNSD">Peculio</option>
+        <option value="DNSD">DCReintegração</option>
+        <option value="DNSD">DNSaúde</option>
+        <option value="DTIII">CIMIC</option>
+        <option value="DCSD">AlaProgressão</option>
+        <option value="DNSD">AssistênciaJudiciária</option>
+        <option value="DNSD">Sindicância</option>
+        <option value="DNSD">RoldeVisitantes</option>
+        <option value="DNSD">Portaria</option>
+        <option value="DNSD">Canil</option>
+        <option value="DNSD">DNPessoal</option>
+        <option value="DNSD">DNInfraestrutura</option>
+        <option value="DNSD">CadastroMovimentação</option>
+        <option value="DNSD">EquipeTecnica</option>
+        <option value="DNSD">SupervisãoTecnica</option>
+        <option value="DNSD">AproximaçãoFamiliar</option>
+        <option value="DNSD">MonitoramentoEletronico</option>
+        <option value="DNSD">CPD/Informática</option>
+        <option value="DNSD">Agendamentos</option>
+        <option value="DNSD">VideoConferencia</option>
+        <option value="DNSD">NúcleodeEscolta</option>
+        <option value="DTIII">DCEVP</option>
+        <option value="DCSD">DNEVP</option>
+        <option value="DNSD">DNInclusão</option>
+        
+      </select>
+      <input type="text" id="assunto" placeholder="Assunto">
+      <button class="button" onclick="salvar()">SALVAR</button>
+    </div>
+
+    <!-- Campos para criação em lote -->
+    <div id="lote" style="display: none;">
+      <input type="number" id="quantidade" placeholder="Quantidade">
+      <!-- Restante dos campos para criação em lote -->
+      <button class="button" onclick="salvarLote()">SALVAR</button>
+    </div>
+  </div>
+
+  
+</body>
+</html>

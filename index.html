@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<head>
+  <title>NUMERAÇÃO PPB</title>
+  </head>
+<body>
+  <div class="control-list">
+    <body>
+      <button class="BUtton">
+      <a href="NOTES.html">NOTES</a>
+      </buttontton>
+    </body> 
+
+    <button class="button" onclick="openNewTab('NOVO")">RELAÇÃO DE REMESSA</button>
+    <button class="button" onclick="openNewTab('NOVO')">OFÍCIO</button>
+    <button class="button" onclick="openNewTab('NOVO')">PROCESSO</button>
+    <button class="button" onclick="openNewTab('NOVO')">ORDEM DE SERVIÇO</button>
+    <button class="button" onclick="openNewTab('NOVO')">EXPEDIENTES</button>
+    <button class="button" onclick="openNewTab('NOVO')">PORTARIAS</button>
+  </div>
+
+  <script>
+    function openNewTab(tabType) {
+      var newTabUrl = 'nova_aba.html#' + tabType;
+      window.open(newTabUrl, '_blank');
+    }
+  </script>
+</body>
+</html>

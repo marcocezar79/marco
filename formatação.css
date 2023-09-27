@@ -1,0 +1,26 @@
+.button {
+    height: 2cm;
+    width: 3cm
+    background-color: lightblue;
+    font-family: Arial Black, sans-serif;
+    font-size: 19px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+
+  .button:hover {
+    background-color: darkblue;
+    color: white;
+    transform: scale(1.1);
+  }
+
+  /* Lista de controle */
+  .control-list {
+    margin-top: 20px;
+  }
+
+  .control-list input[type="text"],
+  .control-list select {
+    margin-bottom: 10px;
+  }
+  
